@@ -5,12 +5,18 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 
+import Dashboard from "@/pages/dashboard";
+import ResumeDetail from "@/pages/resume-detail";
+import CoverLetterDetail from "@/pages/cover-letter-detail";
+import InterviewPrepDetail from "@/pages/interview-prep-detail";
+
 function Router() {
   return (
     <Switch>
-      {/* Add pages below */}
-      {/* <Route path="/" component={Home}/> */}
-      {/* Fallback to 404 */}
+      <Route path="/" component={Dashboard} />
+      <Route path="/resume/:id" component={ResumeDetail} />
+      <Route path="/cover-letter/:id" component={CoverLetterDetail} />
+      <Route path="/interview-prep/:id" component={InterviewPrepDetail} />
       <Route component={NotFound} />
     </Switch>
   );
@@ -20,8 +26,8 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
         <Router />
+        <Toaster />
       </TooltipProvider>
     </QueryClientProvider>
   );
