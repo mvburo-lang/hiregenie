@@ -1,5 +1,5 @@
 import { Link, useLocation } from "wouter";
-import { Sparkles, FileText, LayoutDashboard, Menu } from "lucide-react";
+import { Wand2, FileText, LayoutDashboard, Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 
@@ -22,7 +22,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center gap-6 md:gap-10">
             <Link href="/" className="flex items-center gap-2 group cursor-pointer">
               <div className="bg-gradient-to-tr from-primary to-accent p-2 rounded-xl group-hover:scale-105 transition-transform duration-300">
-                <Sparkles className="w-5 h-5 text-white" />
+                <Wand2 className="w-5 h-5 text-white" />
               </div>
               <span className="font-bold text-xl tracking-tight hidden sm:inline-block">
                 Hire<span className="text-primary">Genie</span>
