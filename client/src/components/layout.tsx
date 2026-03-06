@@ -25,7 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
                 <Sparkles className="w-5 h-5 text-white" />
               </div>
               <span className="font-bold text-xl tracking-tight hidden sm:inline-block">
-                Resume<span className="text-primary">AI</span>
+                Hire<span className="text-primary">Genie</span>
               </span>
             </Link>
             <nav className="hidden md:flex gap-6">

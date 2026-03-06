@@ -86,8 +86,8 @@ export default function Dashboard() {
     <Layout>
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 mb-10">
         <div>
-          <h1 className="text-4xl font-extrabold tracking-tight text-foreground">Dashboard</h1>
-          <p className="text-lg text-muted-foreground mt-2">Manage your career assets and optimizations.</p>
+          <h1 className="text-4xl font-extrabold tracking-tight text-foreground">HireGenie</h1>
+          <p className="text-lg text-muted-foreground mt-2">Generate the perfect resume for any job description.</p>
         </div>
 
         <Dialog open={isCreateOpen} onOpenChange={setIsCreateOpen}>
