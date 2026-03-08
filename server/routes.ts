@@ -110,7 +110,7 @@ Job Description:
 ${jobDescription}`;
 
       const response = await openai.chat.completions.create({
-        model: "gpt-5.1",
+        model: "gpt-4.1-mini",
         messages: [{ role: "user", content: prompt }],
         response_format: { type: "json_object" },
       });
@@ -175,7 +175,7 @@ Job Description:
 ${input.jobDescription}`;
 
       const response = await openai.chat.completions.create({
-        model: "gpt-5.1",
+        model: "gpt-4.1-mini",
         messages: [{ role: "user", content: prompt }],
       });
 
@@ -253,7 +253,7 @@ Job Description:
 ${input.jobDescription}`;
 
       const response = await openai.chat.completions.create({
-        model: "gpt-5.1",
+        model: "gpt-4.1-mini",
         messages: [{ role: "user", content: prompt }],
         response_format: { type: "json_object" },
       });
