@@ -17,10 +17,9 @@ export async function registerRoutes(
   
   // -- Resumes --
   
-  app.get(api.resumes.list.path, async (req, res) => {
-    const resumesList = await storage.getResumes();
-    res.json(resumesList);
-  });
+  app.get(api.resumes.list.path, async (_req, res) => {
+  return res.json([]);
+});
 
   app.get(api.resumes.get.path, async (req, res) => {
     const resume = await storage.getResume(Number(req.params.id));
